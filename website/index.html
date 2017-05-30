@@ -6,16 +6,15 @@
 		<script src="js/main.js"></script>
 
 	</head>
-
-	<body>
+	<body style="background-color: gray;">
 		<div>
 			<div id="video-container">
-			You=><video id="my-video" width="320px" height="240px" autoplay></video>
-			Peer=><video id="their-video" width="320px" height="240px" autoplay></video>
+			You=><video id="my-video" width="320px" height="240px" style="border-style: solid; background-color: white;" autoplay></video>
+			Peer=><video id="their-video" width="320px" height="240px" style="border-style: solid; background-color: white;" autoplay></video>
 			</div>
 
 		<div>
-			<h2>Video Chat using HxWebRTC</h2>
+			<h2 style="font-family: monospace;">Simple video chat using HxWRTC</h2>
 
 			<div id="step1">
 			<p>Allow access to cam and microphone</p>
@@ -40,6 +39,9 @@
 			<p>Call in progess with <span id="their-id">...</span></p>
 			<p><a href="#" id="end-call">End Call</a></p>
 			</div>
+			</div>
+			<div>
+				<p align="right"><a href="https://github.com/hitex-loco/hxwebrtc">Click here for my code repo</a></p>
 			</div>
 	</body>
 </html>
