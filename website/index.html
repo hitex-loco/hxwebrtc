@@ -1,47 +1,50 @@
-<html>
+	<html>
 	<head>
 		<title>HxWebRTC</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="http://cdn.peerjs.com/0.3/peer.js"></script>
-		<script src="js/main.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdn.peerjs.com/0.3/peer.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 
 	</head>
-	<body style="background-color: gray;">
+	<body>
 		<div>
 			<div id="video-container">
-			You=><video id="my-video" width="320px" height="240px" style="border-style: solid; background-color: white;" autoplay></video>
-			Peer=><video id="their-video" width="320px" height="240px" style="border-style: solid; background-color: white;" autoplay></video>
+				You=><video id="my-video" width="320px" height="240px" autoplay></video>
+				Peer=><video id="their-video" width="320px" height="240px" autoplay></video>
 			</div>
 
-		<div>
-			<h2 style="font-family: monospace;">Simple video chat using WRTC</h2>
+			<div>
+				<h2>Simple video chat using WRTC</h2>
 
-			<div id="step1">
-			<p>Allow access to cam and microphone</p>
+				<div id="step1">
+					<p>Allow access to cam and microphone</p>
 
-			<div id="step1-error">
-			<p>Failed to get access</p>
-			<a href="#" id="step1=retry" class="button">Try again</a>
+					<div id="step1-error">
+						<p>Failed to get access</p>
+						<a href="#" id="step1=retry" class="button">Try again</a>
+					</div>
+				</div>
+
+
+				<div id="step2">
+					<p>Your id : <span id="my-id">...</span></p>
+					<p><span id="subhead">Make a call</span><br>
+						<input type="text" placeholder="Call user id..." id="callto-id">
+						<a href="#" id="make-call">Call</a>
+					</p>
+				</div>
+
+
+				<div id="step3">
+					<p>Call in progess with <span id="their-id">...</span></p>
+					<p><a href="#" id="end-call">End Call</a></p>
+				</div>
 			</div>
-			</div>
 
-
-			<div id="step2">
-			<p>Your id : <span id="my-id">...</span></p>
-			<p><span id="subhead">Make a call</span><br>
-			<input type="text" placeholder="Call user id..." id="callto-id">
-			<a href="#" id="make-call">Call</a>
-			</p>
-			</div>
-
-
-			<div id="step3">
-			<p>Call in progess with <span id="their-id">...</span></p>
-			<p><a href="#" id="end-call">End Call</a></p>
-			</div>
-			</div>
 			<div>
 				<p align="right"><a href="https://github.com/hitex-loco/hxwebrtc">Click here for my code repo</a></p>
 			</div>
-	</body>
-</html>
+
+		</body>
+		</html>

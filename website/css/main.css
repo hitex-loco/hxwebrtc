@@ -1,0 +1,7 @@
+body{
+	background-color: gray;
+}
+
+#my-video, #their-video{
+	border-style: solid; background-color: white;
+}
